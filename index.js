@@ -13,5 +13,5 @@ module.exports = function(source) {
     content: source,
   });
   this.cacheable();
-  this.callback(null, `module.exports = ${result}`);
+  this.callback(null, 'module.exports ='+ result);
 };
