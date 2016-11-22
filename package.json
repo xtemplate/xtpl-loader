@@ -4,8 +4,7 @@
   "author": "yiminghe@gmail.com",
   "devDependencies": {
     "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1",
-    "xtemplate": "^4.5.0"
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "start": "webpack-dev-server --config tests/webpack.config.js",
@@ -13,5 +12,8 @@
   },
   "dependencies": {
     "loader-utils": "^0.2.12"
-  }
+  },  
+  "peerDependencies": {
+    "xtemplate": "4.x"
+  },
 }
