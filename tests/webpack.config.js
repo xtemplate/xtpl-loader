@@ -11,20 +11,18 @@ const entry = {
 module.exports = {
   entry: entry,
 
-  resolve: {
-    extensions: ['', '.js'],
-  },
-
   devtool: '#source-map',
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.xtpl$/,
         exclude: /node_modules/,
         loader: path.resolve(__dirname, '../'),
-      },
-    ],
+        query: {
+          Compiler:require('xtemplate-compiler').default,
+        }
+      }]
   },
 
   output: {
